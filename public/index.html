@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lázaro Lironis — Desarrollador Web Front-end</title>
+  <meta name="description" content="Desarrollador Front-end especializado en Angular, accesibilidad y performance. Portfolio con proyectos, servicios y contacto profesional." />
+  <meta property="og:title" content="Lázaro Lironis — Desarrollador Web Front-end" />
+  <meta property="og:description" content="Desarrollador Front-end especializado en Angular, accesibilidad y performance." />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="/assets/icon-192.png" sizes="32x32" />
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* CSS crítico: variables y tipografía base */
+    :root{
+      --primary:#0A66C2;
+      --bg:#ffffff;
+      --muted:#6b7280;
+      --text:#0b1220;
+      --card:#f8fafc;
+      --radius:12px;
+      --container:1100px;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,system-ui;
+    }
+    html,body{margin:0;height:100%;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+    a{color:var(--primary)}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+  </style>
+  <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'">
+  <script defer src="/main.js"></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Ir al inicio">
+        <img src="/assets/avatar-120.png" alt="Avatar Lázaro Lironis" class="avatar" width="48" height="48">
+        <span class="brand-text">Lázaro Lironis</span>
+      </a>
+      <button id="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="hamb" aria-hidden="true"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" role="navigation" aria-label="Navegación principal" aria-hidden="true">
+        <ul>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" role="region" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 id="hero-title">Desarrollador Web Front-end</h1>
+          <p class="lead">Especializado en Angular, accesibilidad y performance. Diseño y construyo interfaces limpias, rápidas y accesibles.</p>
+          <p class="ctas">
+            <a class="btn primary" href="#projects">Ver proyectos</a>
+            <a class="btn ghost" href="#contact">Contactar</a>
+          </p>
+          <ul class="hero-bullets" aria-hidden="true">
+            <li>Responsable y organizado</li>
+            <li>Comunicación efectiva y trabajo en equipo</li>
+            <li>Aprendizaje autónomo y resolución lógica</li>
+          </ul>
+        </div>
+        <aside class="hero-aside" aria-hidden="false">
+          <div class="avatar-large" role="img" aria-label="Avatar de Lázaro">
+            <img src="/assets/avatar-1200.png" alt="Avatar estilo profesional de Lázaro Lironis" width="600" height="600" loading="lazy">
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">Sobre mí</h2>
+        <p>Me considero una persona responsable, organizada y con facilidad para adaptarme a nuevos desafíos. Cuento con buenas habilidades de comunicación, trabajo en equipo y compromiso con los objetivos. A través de mi formación autodidacta desarrollé capacidad de razonamiento lógico, análisis de problemas y autonomía en el aprendizaje. Estoy motivado a seguir creciendo en un entorno profesional que valore la iniciativa y el aprendizaje constante.</p>
+        <ul class="values" aria-hidden="true">
+          <li><strong>Organización y responsabilidad</strong></li>
+          <li><strong>Comunicación efectiva</strong></li>
+          <li><strong>Aprendizaje autónomo y resolución lógica</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Habilidades</h2>
+        <div class="skills-grid" role="list">
+          <div class="skill-group" role="listitem">
+            <h3>Principales</h3>
+            <ul>
+              <li>Angular <span class="lvl">Avanzado</span></li>
+              <li>TypeScript <span class="lvl">Avanzado</span></li>
+              <li>JavaScript <span class="lvl">Avanzado</span></li>
+            </ul>
+          </div>
+          <div class="skill-group" role="listitem">
+            <h3>Complementarias</h3>
+            <ul>
+              <li>HTML5 <span class="lvl">Avanzado</span></li>
+              <li>CSS moderno <span class="lvl">Intermedio-Avanzado</span></li>
+              <li>Git <span class="lvl">Intermedio</span></li>
+              <li>Bootstrap <span class="lvl">Intermedio</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Proyectos destacados</h2>
+        <p class="muted">Placeholders editables: reemplaza contenido y enlaces por tus proyectos reales.</p>
+        <div class="projects-grid" role="list">
+          <article class="card project-card" aria-labelledby="proj-a-title" role="listitem">
+            <img src="/assets/project-a-400.jpg" alt="Proyecto A - imagen principal" width="1200" height="800" loading="lazy">
+            <div class="card-body">
+              <h3 id="proj-a-title">Proyecto A — SPA (placeholder)</h3>
+              <p class="muted">SPA con foco en experiencia y performance.</p>
+              <p><strong>Rol:</strong> Front-end · <strong>Stack:</strong> Angular, TypeScript, HTML, CSS</p>
+              <ul class="project-challenges">
+                <li>Routing y lazy loading</li>
+                <li>Optimización de bundle</li>
+                <li>Accesibilidad ARIA</li>
+              </ul>
+              <p class="project-results muted">Resultados: métricas placeholder (p. ej. carga &lt;2s)</p>
+              <p class="project-actions">
+                <a class="btn small" href="#" aria-disabled="true">Demo</a>
+                <a class="btn small ghost" href="#" aria-disabled="true">Repo</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="card project-card" aria-labelledby="proj-b-title" role="listitem">
+            <img src="/assets/project-b-400.jpg" alt="Proyecto B - imagen principal" width="1200" height="800" loading="lazy">
+            <div class="card-body">
+              <h3 id="proj-b-title">Proyecto B — Component Library (placeholder)</h3>
+              <p class="muted">Biblioteca de componentes accesibles y documentada.</p>
+              <p><strong>Rol:</strong> Diseño y componentes · <strong>Stack:</strong> Angular, Storybook, CSS</p>
+              <ul class="project-challenges">
+                <li>Documentación y pruebas visuales</li>
+                <li>Theming y tokens</li>
+              </ul>
+              <p class="project-results muted">Resultados: placeholder</p>
+              <p class="project-actions">
+                <a class="btn small" href="#" aria-disabled="true">Demo</a>
+                <a class="btn small ghost" href="#" aria-disabled="true">Repo</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="card project-card" aria-labelledby="proj-c-title" role="listitem">
+            <img src="/assets/project-c-400.jpg" alt="Proyecto C - imagen principal" width="1200" height="800" loading="lazy">
+            <div class="card-body">
+              <h3 id="proj-c-title">Proyecto C — PWA (placeholder)</h3>
+              <p class="muted">PWA básica con caching y experiencia offline.</p>
+              <p><strong>Rol:</strong> Integración PWA · <strong>Stack:</strong> Angular, Service Worker, Firebase</p>
+              <ul class="project-challenges">
+                <li>Service worker y caching</li>
+                <li>Fallback offline y sync</li>
+              </ul>
+              <p class="project-results muted">Resultados: placeholder</p>
+              <p class="project-actions">
+                <a class="btn small" href="#" aria-disabled="true">Demo</a>
+                <a class="btn small ghost" href="#" aria-disabled="true">Repo</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section" aria-labelledby="exp-title">
+      <div class="container">
+        <h2 id="exp-title">Experiencia y formación</h2>
+        <ul class="timeline">
+          <li><strong>Bachiller en Economía</strong><span class="muted"> · Formación secundaria</span></li>
+          <li><strong>Curso Desarrollo Web Front-end</strong><span class="muted"> · Centro Universitario Vicente López — Plataforma 5</span></li>
+          <li><strong>Universidad JavaScript</strong><span class="muted"> · Udemy (certificados disponibles)</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services" class="section" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title">Servicios</h2>
+        <ul class="services-list" aria-hidden="true">
+          <li>Optimización de performance</li>
+          <li>Desarrollo de componentes accesibles</li>
+          <li>Integración y despliegue en Firebase Hosting</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contacto</h2>
+        <p class="muted">Escríbeme para colaborar o solicitar una revisión técnica.</p>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Enviar mensaje</button>
+            <a class="btn ghost" href="mailto:lalolironis@gmail.com">Enviar por email</a>
+          </div>
+          <p id="form-status" class="muted" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/lazaro-lironis-5925b1276" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/LazaroLironis241103" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:lalolironis@gmail.com">lalolironis@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Lázaro Lironis — Desarrollador Web Front-end</p>
+      <p class="muted">Stack: Angular; TypeScript; JavaScript; HTML5; CSS. Deploy-ready for Firebase Hosting.</p>
+    </div>
+  </footer>
+</body>
+</html>
